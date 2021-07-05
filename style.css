@@ -316,7 +316,7 @@ footer h1 {
 .contacts {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .contact-icon {
@@ -435,5 +435,13 @@ figcaption {
 @media all and (max-width: 500px) {
     #slideshow {
         height: 15rem;
+    }
+
+    .contact-icon {
+        width: 3rem;
+    }
+
+    figcaption {
+        font-size: small;
     }
 }
