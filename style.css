@@ -348,11 +348,38 @@ figcaption {
 }
 
 #slideshow {
-    width: 100%;
+    margin-top: -5em;
+    margin-left: 20%;
+    margin-bottom: 5em;
+    width: 60%;
     height: 30rem;
     background-image: url(images/ica-pic.JPG);
     animation: slideshow 10s infinite;
     background-size: 100% 100%;
+}
+
+.contact-me {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    text-decoration: none;
+    font-size: var(--fs-h3);
+    background-color: var(--fc-dark);
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em;
+    color: var(--fc-light);
+    font-weight: bold;
+    box-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.contact-me:hover {
+    color: var(--fc-link);
+    background-color: var(--fc-light);
+}
+
+.contact-me:active {
+    box-shadow: none;
 }
 
 @keyframes slideshow {
@@ -395,12 +422,18 @@ figcaption {
     }
 
     #slideshow {
-        height: 25rem;
+        height: 20rem;
+    }
+
+    .contact-me {
+        left: 0.5em;
+        bottom: 0.5em;
+        padding: 0.5em;
     }
 }
 
 @media all and (max-width: 500px) {
     #slideshow {
-        height: 20rem;
+        height: 15rem;
     }
 }
